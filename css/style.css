@@ -15,7 +15,7 @@ html {
 }
 
 .container {
-  min-width: 100vh;
+  min-width: 100%;
 }
 
 .container,
@@ -84,17 +84,40 @@ a {
 
 .right {
   background-color: rgba(249, 250, 251);
+  width: 62.85%; /* 100% - 37.15% */
+  box-sizing: border-box;
 }
 
 .service-text {
-  margin-top: 15vh;
+  margin-top: 16.5vh;
   padding-left: 48px;
   padding-right: 187px;
 }
 
 p {
   font-size: 24px;
-  font-weight: 400;
-  max-width: 670px;
+  font-weight: bold;
+  max-width: 725px;
   line-height: 1.2em;
+  margin: 0;
+}
+
+.service-text p:last-child {
+  padding-top: 32px;
+  padding-bottom: 64px;
+  margin: 0;
+}
+
+.form {
+  padding-left: 48px;
+  padding-top: 24px;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+label {
+  text-transform: uppercase;
 }
