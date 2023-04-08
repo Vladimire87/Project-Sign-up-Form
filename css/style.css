@@ -116,9 +116,35 @@ p {
     rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-row .form-example {
+  /* flex-basis: 25%; */
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: block;
+}
+
 label {
+  font-size: 12px;
   text-transform: uppercase;
   display: block;
   margin-bottom: 5px;
   letter-spacing: 1px;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-left: 48px;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 15em;
 }
