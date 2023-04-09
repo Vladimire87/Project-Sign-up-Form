@@ -61,7 +61,7 @@ figure {
 .logo-text {
   font-family: "NorseBold";
   color: white;
-  font-size: 70px;
+  font-size: 90px;
 }
 
 .unsplash {
@@ -124,8 +124,23 @@ p {
 .form-row .form-example {
   /* flex-basis: 25%; */
   margin-bottom: 20px;
-  margin-left: 50px;
+  margin-right: 50px;
   display: block;
+}
+
+.password-style {
+  padding-bottom: 40px;
+}
+
+.error-message {
+  display: block;
+}
+.form-example > input:focus {
+  background-color: rgba(104, 156, 171, 0.02);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  outline: none;
+  border: 1px solid rgb(28 78 216);
 }
 
 label {
@@ -137,8 +152,21 @@ label {
 }
 
 .btn {
-  margin-top: 20px;
+  margin-top: 35px;
   margin-left: 48px;
+}
+
+.btn > input {
+  padding: 18px 50px 18px 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  /* background-color: rgb(138 187 200); */
+  background-color: rgb(111 114 4);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 1px solid rgba(97, 102, 3, 0.67);
+  cursor: pointer;
 }
 
 input {
@@ -147,4 +175,25 @@ input {
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 15em;
+}
+
+.error > .form-example > input {
+  outline: none;
+  border: 1px solid rgb(216, 28, 28);
+}
+
+.error > .form-example > span {
+  color: rgb(216, 28, 28);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.have-account {
+  padding-left: 48px;
+  margin-top: 38px;
+  font-size: 18px;
+}
+
+.have-account > a {
+  color: rgb(111 114 4);
 }

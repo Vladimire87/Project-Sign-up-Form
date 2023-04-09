@@ -75,17 +75,18 @@
                 <span id="phone-error" class="error-message"></span>
               </div>
             </div>
-            <div class="form-row">
+            <div class="form-row password-style error">
               <div class="form-example">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" required />
+                <span class="error-message">* Passwords do not match</span>
               </div>
               <div class="form-example">
-                <label for="cpassword">Confirm Password</label>
+                <label for="confirm-password">Confirm Password</label>
                 <input
                   type="password"
-                  name="cpassword"
-                  id="cpassword"
+                  name="confirm-password"
+                  id="confirm-password"
                   required
                 />
               </div>
@@ -93,9 +94,14 @@
           </form>
         </div>
         <div class="btn">
-          <input type="submit" form="my-form" value="Subscribe!" />
+          <input type="submit" form="my-form" value="Create Account" />
         </div>
+        <p class="have-account">
+          Already have an account?
+          <a href="" target="blank" rel="noopener noreferrer">Log in</a>
+        </p>
       </div>
     </div>
+    <script src="/js/javascript.js"></script>
   </body>
 </html>
