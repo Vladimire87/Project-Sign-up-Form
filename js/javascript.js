@@ -12,14 +12,14 @@ confirmPasswordInput.addEventListener("input", () => {
   const confirmPasswordValue = confirmPasswordInput.value;
 
   if (passwordValue !== confirmPasswordValue) {
-    console.log("* Password don't match");
+    // console.log("* Password don't match");
     formRowElement.classList.remove("success");
     formRowElement.classList.add("error");
     errorMessage.innerText = "* Passwords do not match";
     submitButton.disabled = true;
   }
   if (passwordValue == confirmPasswordValue) {
-    console.log("Passwords match");
+    // console.log("Passwords match");
     formRowElement.classList.remove("error");
     formRowElement.classList.add("success");
     errorMessage.innerText = "";
